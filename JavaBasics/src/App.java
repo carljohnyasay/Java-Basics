@@ -40,7 +40,7 @@ public class App {
 
 
 
-        System.out.println("Enter a number: ");
+/*         System.out.println("Enter a number: ");
         int number = scanner.nextInt();
 
         if (number % 2 == 0){
@@ -49,6 +49,28 @@ public class App {
         } else {
             System.out.println("The number " + number + " is odd.");
         }
+ */
 
+       
+        System.out.println("Enter the first number: ");
+        int number1 = scanner.nextInt();
+        
+        System.out.println("Enter the second number: ");
+        int number2 = scanner.nextInt();
+
+        System.out.println("Enter the last number: ");
+        int number3 = scanner.nextInt();
+
+        int largestNumber;
+
+        if (number1 >= number2 && number1 >= number3){
+            largestNumber = number1;
+        } else if (number2 >= number1 && number2 >= number3){
+            largestNumber = number2;
+        } else {
+            largestNumber = number3;
+        }
+
+        System.out.println("The largest number is: " + largestNumber);
     }
 }
