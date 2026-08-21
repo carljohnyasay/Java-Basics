@@ -5,7 +5,7 @@ public class App {
         /* String name;
         int age;
         int birthYear; */
-        
+
         Scanner scanner = new Scanner(System.in);
 
         /* System.out.println("Enter your name: ");
@@ -25,7 +25,7 @@ public class App {
             System.out.println("You are a minor.");
         } */
 
-        int number1;
+/*         int number1;
         int number2;
 
         System.out.println("Enter the first number: ");
@@ -36,6 +36,19 @@ public class App {
 
         int sum = number1 + number2;
 
-        System.out.print("The sum of " + number1 + " and " + number2 + " is " + sum + ".");
+        System.out.print("The sum of " + number1 + " and " + number2 + " is " + sum + "."); */
+
+
+
+        System.out.println("Enter a number: ");
+        int number = scanner.nextInt();
+
+        if (number % 2 == 0){
+            System.out.println("The number " + number + " is even.");
+
+        } else {
+            System.out.println("The number " + number + " is odd.");
+        }
+
     }
 }
