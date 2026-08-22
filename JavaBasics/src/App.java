@@ -75,14 +75,56 @@ public class App {
         
 */
 
-     System.out.println("Enter temperaturen in Celsius: ");
-     int celsius = scanner.nextInt();
+/*      System.out.println("Enter temperaturen in Celsius: ");
+     double celsius = scanner.nextInt();
         
      double fahrenheit = (celsius * 9 / 5) + 32;
 
      String message = String.format("Temperature in Fahrenheit: %.2f", fahrenheit);
 
-     System.out.println(message);
+     System.out.println(message); 
+     
+*/
+
+
+
+     System.out.print("Enter the first number: ");
+     int number1 = scanner.nextInt();
+
+     scanner.nextLine(); // Consume the newline character left by nextInt(). This is necessary when using "nextLine()" to avoid skipping the next input.
+
+     System.out.print("Enter the operation (+, -, *, /): ");
+     String operation = scanner.nextLine();
+
+     System.out.print("Enter the second number: ");
+     int number2 = scanner.nextInt();
+
+     switch (operation) {
+        case "+":
+             int sum = number1 + number2;
+             System.out.println("The sum is: " + sum);
+             break;
+        case "-":
+            int difference = number1 - number2;
+            System.out.println("The difference is: " + difference);
+            break;
+        case "*":
+            int product = number1 * number2;
+            System.out.println("The product is: " + product);
+            break;
+        case "/":
+            if (number2 != 0){
+                double quotient = (double) number1 / number2;
+                System.out.println("The quotient is: " + quotient);
+            }
+            else {
+                System.out.println("Error: Division by zero is not allowed.");
+            }
+            break;
+        default:
+            System.out.println("Error: Invalid operation.");
+            break;
+     }
 
 
 
