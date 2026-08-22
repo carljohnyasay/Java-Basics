@@ -52,7 +52,7 @@ public class App {
  */
 
        
-        System.out.println("Enter the first number: ");
+ /*       System.out.println("Enter the first number: ");
         int number1 = scanner.nextInt();
         
         System.out.println("Enter the second number: ");
@@ -71,6 +71,20 @@ public class App {
             largestNumber = number3;
         }
 
-        System.out.println("The largest number is: " + largestNumber);
+        System.out.println("The largest number is: " + largestNumber); 
+        
+*/
+
+     System.out.println("Enter temperaturen in Celsius: ");
+     int celsius = scanner.nextInt();
+        
+     double fahrenheit = (celsius * 9 / 5) + 32;
+
+     String message = String.format("Temperature in Fahrenheit: %.2f", fahrenheit);
+
+     System.out.println(message);
+
+
+
     }
 }
